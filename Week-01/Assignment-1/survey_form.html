@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Web Development Learning Interest Form</title>
+</head>
+<body>
+        <h1>Web Development Learning Interest Form</h1>
+        <p>We want to know how much interest do people have in this Web Development Field.</p>
+        <p>Kindly fill this form with your best interest.</p><br>
+
+    <form action="#">
+        <label for = "firstname">First Name: </label>
+        <input type="text" id="firstname" name="firstname" required><br><br>
+
+        <label for = "lastname">Last Name: </label>
+        <input type="text" id="lastname" name="lastname" required><br><br>
+
+        <label>Gender: </label>
+        <input type="radio" id = "male" name="gender">
+        <label for="male">Male</label>
+        <input type="radio" id = "female" name="gender">
+        <label for="female">Female</label>
+        <input type="radio" id = "other" name="gender">
+        <label for="other">Prefer not to say</label><br><br>
+
+        <label for="dob">Date of Birth: </label>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label for="age">Age: </label>
+        <input type="number" id="age" name="age"><br><br>
+
+        <label for="gmail">E-mail: </label>
+        <input type="email" id="gmail" name="gmail" required><br><br>
+
+        <label for="phone">Mobile number (+91): </label>
+        <input type="number" id="phone" name="phone" placeholder="10 digits only"><br><br>
+
+        <label>Expertise Level: </label>
+        <input type="radio" id = "beginner" name="level">
+        <label for="beginner">Beginner</label>
+        <input type="radio" id = "intermediate" name="level">
+        <label for="intermediate">Intermediate</label>
+        <input type="radio" id = "advance" name="level">
+        <label for="advance">Advanced</label><br><br>
+
+        <label for="tech">What tech are you most excited to learn?</label>
+        <select id="tech" name="tech" required>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+            <option value="react">React</option>
+        </select><br><br>
+
+        <label for="goal">What’s your learning goal? </label>
+        <textarea id="goal" name="goal"></textarea><br><br>
+
+        <label for="method">Preferred learning method: </label>
+        <input type="checkbox" id="videos" name="method" required>
+        <label for="videos">Videos</label>
+        <input type="checkbox" id="books" name="method">
+        <label for="books">Books</label>
+        <input type="checkbox" id="projects" name="method">
+        <label for="projects">Projects</label>
+        <input type="checkbox" id="articles" name="method">
+        <label for="articles">Articles</label><br><br>
+
+        <input type="submit" value="Submit form">
+
+        
+
+
+
+
+    </form>
+</body>
+</html>
