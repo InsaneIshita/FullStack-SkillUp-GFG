@@ -16,6 +16,14 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 | [Assignment 1 - Survey Form](./Week-01/Assignment-1) | Created a basic survey form using HTML form elements like text fields, checkboxes, dropdowns, etc. |
 | [Assignment 2 - Landing Page](./Week-01/Assignment-2) | Designed a simple landing page using semantic HTML tags with a navigation bar and multiple sections. |
 
+## Live Preview Links
+
+1. **Assignment 1 – Survey Form**  
+   [Live Preview](https://htmlpreview.github.io/?https://github.com/InsaneIshita/FullStack-SkillUp-GFG/blob/main/Week-01/Assignment-1/survey_form.html)
+
+2. **Assignment 2 – Landing Page**  
+   [Live Preview](https://htmlpreview.github.io/?https://github.com/InsaneIshita/FullStack-SkillUp-GFG/blob/main/Week-01/Assignment-2/landing_page.html)
+
 ---
 
 ## 📌 Technologies Used
