@@ -9,7 +9,7 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 
 ## 📚 Week-wise Progress
 
-### Week 1: HTML Fundamentals
+### Week 1: LEARN HTML
 
 | Assignment | Description |
 |------------|-------------|
