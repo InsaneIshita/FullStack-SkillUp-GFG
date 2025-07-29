@@ -13,8 +13,8 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 
 | Assignment | Description |
 |------------|-------------|
-| [Assignment 1 - Survey Form](./Week-01/Assignment-1-Survey-Form) | Created a basic survey form using HTML form elements like text fields, checkboxes, dropdowns, etc. |
-| [Assignment 2 - Landing Page](./Week-01/Assignment-2-Landing-Page) | Designed a simple landing page using semantic HTML tags with a navigation bar and multiple sections. |
+| [Assignment 1 - Survey Form](./Week-01/Assignment-1) | Created a basic survey form using HTML form elements like text fields, checkboxes, dropdowns, etc. |
+| [Assignment 2 - Landing Page](./Week-01/Assignment-2) | Designed a simple landing page using semantic HTML tags with a navigation bar and multiple sections. |
 
 ---
 
