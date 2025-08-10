@@ -24,12 +24,29 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 2. **Assignment 2 – Landing Page**  
    [Live Preview](https://htmlpreview.github.io/?https://github.com/InsaneIshita/FullStack-SkillUp-GFG/blob/main/Week-01/Assignment-2/landing_page.html)
 
+### Week 2: LEARN CSS
+
+| Assignment | Description |
+|------------|-------------|
+| [Assignment 1 - Job Search Portal](./Week-02/Assignment-1) | Designed a job search portal using Bootstrap for layout, components, and responsiveness. |
+| [Assignment 2 - E-commerce Website](./Week-02/Assignment-2) | Built a simple e-commerce website using HTML and CSS for product listings and styling. |
+
+#### Live Preview Links 
+
+1. **Assignment 1 – Job Search Portal**  
+   [Live Preview](https://htmlpreview.github.io/?https://github.com/InsaneIshita/FullStack-SkillUp-GFG/blob/main/Week-02/Assignment-1/job_portal.html)
+
+2. **Assignment 2 – E-commerce Website**  
+   [Live Preview](https://htmlpreview.github.io/?https://github.com/InsaneIshita/FullStack-SkillUp-GFG/blob/main/Week-02/Assignment-2/index.html)
+
 ---
 
 ## 📌 Technologies Used
 
 - HTML5  
-
+- CSS3  
+- Bootstrap
+  
 ---
 
 ## 📈 Progress Tracker
@@ -37,7 +54,8 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 | Week | Status |
 |------|--------|
 | Week 1 | ✅ Completed |
-| Week 2 | ⏳ In Progress |
+| Week 2 | ✅ Completed |
+| Week 3 | ⏳ In Progress |
 
 
 ---
