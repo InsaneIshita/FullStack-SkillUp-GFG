@@ -120,6 +120,13 @@ body {
     text-decoration: underline;
 }
 
+.logo{
+    margin: 0;
+    font-size: 1.2rem;
+    color: #6b46c1;
+    font-weight: bold;
+}
+
 /* Featured Products */
 .featured {
     max-width: 1200px;
