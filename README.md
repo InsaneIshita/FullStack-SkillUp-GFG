@@ -88,6 +88,7 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 | Week 2 | ✅ Completed |
 | Week 3 | ✅ Completed |
 | Week 4 | ✅ Completed |
+| Week 5 | ⏳ In Progress |
 
 ---
 
