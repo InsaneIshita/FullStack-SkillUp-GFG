@@ -39,14 +39,26 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 2. **Assignment 2 – E-commerce Website**  
    [Live Preview](https://htmlpreview.github.io/?https://github.com/InsaneIshita/FullStack-SkillUp-GFG/blob/main/Week-02/Assignment-2/index.html)
 
+### Week 3: LEARN JAVASCRIPT (PART 1)
+
+| Exercise | Description |
+|----------|-------------|
+| [Exercise - Dark Mode Toggle](./Week-03/Exercise) | Implemented a Dark Mode feature in websites using HTML, CSS, and JavaScript. Learned how to manipulate DOM elements dynamically with JS. |
+
+#### Live Preview Link
+
+1. **Exercise – Dark Mode Toggle**  
+   [Live Preview](https://htmlpreview.github.io/?https://github.com/InsaneIshita/FullStack-SkillUp-GFG/blob/main/Week-03/Exercise/darkModeToggle.html)
+   
 ---
 
 ## 📌 Technologies Used
 
 - HTML5  
 - CSS3  
-- Bootstrap
-  
+- Bootstrap  
+- JavaScript  
+
 ---
 
 ## 📈 Progress Tracker
@@ -55,8 +67,8 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 |------|--------|
 | Week 1 | ✅ Completed |
 | Week 2 | ✅ Completed |
-| Week 3 | ⏳ In Progress |
-
+| Week 3 | ✅ Completed |
+| Week 4 | ⏳ In Progress |
 
 ---
 
