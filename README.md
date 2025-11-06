@@ -49,7 +49,26 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 
 1. **Exercise – Dark Mode Toggle**  
    [Live Preview](https://htmlpreview.github.io/?https://github.com/InsaneIshita/FullStack-SkillUp-GFG/blob/main/Week-03/Exercise/darkModeToggle.html)
-   
+
+### Week 4: LEARN JAVASCRIPT (PART 2)
+
+| Exercise | Description |
+|----------|-------------|
+| [Exercise 1 - To Do List App](./Week-04/Exercise-1) | Built a To-Do List App using JavaScript to add, delete, and edit tasks. Practiced DOM manipulation and event handling. |
+| [Exercise 2 - Simple Counter](./Week-04/Exercise-2) | Created a basic counter using JavaScript with increment and decrement functionalities. |
+| [Exercise 3 - Dynamic Portfolio Website](./Week-04/Exercise-3) | Designed a dynamic portfolio website where content updates dynamically using JavaScript. Strengthened DOM interaction and UI logic. |
+
+#### Live Preview Links  
+
+1. **Exercise 1 – To Do List App**  
+   [Live Preview](https://htmlpreview.github.io/?https://github.com/InsaneIshita/FullStack-SkillUp-GFG/blob/main/Week-04/Exercise-1/toDoList.html)
+
+2. **Exercise 2 – Simple Counter**  
+   [Live Preview](https://htmlpreview.github.io/?https://github.com/InsaneIshita/FullStack-SkillUp-GFG/blob/main/Week-04/Exercise-2/counter.html)
+
+3. **Exercise 3 – Dynamic Portfolio Website**  
+   [Live Preview](https://htmlpreview.github.io/?https://github.com/InsaneIshita/FullStack-SkillUp-GFG/blob/main/Week-04/Exercise-3/portfolio.html)
+
 ---
 
 ## 📌 Technologies Used
@@ -68,7 +87,8 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 | Week 1 | ✅ Completed |
 | Week 2 | ✅ Completed |
 | Week 3 | ✅ Completed |
-| Week 4 | ⏳ In Progress |
+| Week 4 | ✅ Completed |
+| Week 5 | ⏳ In Progress |
 
 ---
 
