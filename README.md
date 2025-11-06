@@ -79,10 +79,10 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 #### Live Preview Links  
 
 1. **Exercise 1 – Simple Counter App**  
-   [Live Preview](https://htmlpreview.github.io/?https://github.com/InsaneIshita/FullStack-SkillUp-GFG/blob/main/Week-05/Exercise-1/counter-react.html)
+   [Live Preview](https://counter-reactt-app.netlify.app/)
 
 2. **Exercise 2 – To Do List App (React-Bootstrap)**  
-   [Live Preview](https://htmlpreview.github.io/?https://github.com/InsaneIshita/FullStack-SkillUp-GFG/blob/main/Week-05/Exercise-2/todo-react.html)
+   [Live Preview](https://todo-list-reactt-app.netlify.app/)
 
 ---
 
