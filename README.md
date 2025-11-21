@@ -69,6 +69,21 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 3. **Exercise 3 – Dynamic Portfolio Website**  
    [Live Preview](https://htmlpreview.github.io/?https://github.com/InsaneIshita/FullStack-SkillUp-GFG/blob/main/Week-04/Exercise-3/portfolio.html)
 
+### Week 5: LEARN REACT
+
+| Exercise | Description |
+|----------|-------------|
+| [Exercise 1 - Simple Counter App](./Week-05/Exercise-1) | Developed a Simple Counter App using **React** to understand component-based architecture and state management with `useState`. |
+| [Exercise 2 - To Do List App (React-Bootstrap)](./Week-05/Exercise-2) | Built a To-Do List App using **React-Bootstrap**, combining React interactivity with Bootstrap styling for a polished UI. |
+
+#### Live Preview Links  
+
+1. **Exercise 1 – Simple Counter App**  
+   [Live Preview](https://counter-reactt-app.netlify.app/)
+
+2. **Exercise 2 – To Do List App (React-Bootstrap)**  
+   [Live Preview](https://todo-list-reactt-app.netlify.app/)
+
 ---
 
 ## 📌 Technologies Used
@@ -76,7 +91,8 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 - HTML5  
 - CSS3  
 - Bootstrap  
-- JavaScript  
+- JavaScript
+- React.js 
 
 ---
 
@@ -88,7 +104,8 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 | Week 2 | ✅ Completed |
 | Week 3 | ✅ Completed |
 | Week 4 | ✅ Completed |
-| Week 5 | ⏳ In Progress |
+| Week 5 | ✅ Completed |
+| Week 6 | ⏳ In Progress |
 
 ---
 
