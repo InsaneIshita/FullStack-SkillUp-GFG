@@ -84,7 +84,7 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 2. **Exercise 2 – To Do List App (React-Bootstrap)**  
    [Live Preview](https://todo-list-reactt-app.netlify.app/)
 
-### Week 5: REACT HOOKS
+### Week 6: REACT HOOKS
 
 | Exercise | Description |
 |----------|-------------|
@@ -93,7 +93,7 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 #### Live Preview Links  
 
 1. **Exercise 1 – Social Media Dashboard**  
-   [Live Preview](https://s0cial-media-dashboard.netlify.app/)
+   [Live Preview](https://social-media-dashb0ard.netlify.app/)
    
 ---
 
