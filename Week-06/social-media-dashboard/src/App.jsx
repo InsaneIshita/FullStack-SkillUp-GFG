@@ -19,6 +19,7 @@ const ProtectedRoute = ({ children }) => {
 
 function App() {
   return (
+    
     <Provider store={store}>
       <ThemeProvider>
         <AuthProvider>
