@@ -84,6 +84,17 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 2. **Exercise 2 – To Do List App (React-Bootstrap)**  
    [Live Preview](https://todo-list-reactt-app.netlify.app/)
 
+### Week 6: REACT HOOKS
+
+| Exercise | Description |
+|----------|-------------|
+| [Exercise - Social Media Dashboard](./Week-06/) | Built a Social Media Dashboard using React Hooks such as useState, useEffect, and component-based UI logic. Learned how to manage state, handle updates, and structure a multi-section dashboard. |
+
+#### Live Preview Links  
+
+1. **Exercise 1 – Social Media Dashboard**  
+   [Live Preview](https://social-media-dashb0ard.netlify.app/)
+   
 ---
 
 ## 📌 Technologies Used
@@ -92,7 +103,9 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 - CSS3  
 - Bootstrap  
 - JavaScript
-- React.js 
+- React.js
+- Redux
+- Tailwind CSS 
 
 ---
 
@@ -105,7 +118,8 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 | Week 3 | ✅ Completed |
 | Week 4 | ✅ Completed |
 | Week 5 | ✅ Completed |
-| Week 6 | ⏳ In Progress |
+| Week 6 | ✅ Completed |
+| Week 7 | ⏳ In Progress |
 
 ---
 
