@@ -1,16 +1,17 @@
-import React, { createContext, useState } from 'react'
+import { createContext, useEffect, useState } from 'react'
 
 export const ThemeContext = createContext()
 
 export default function ThemeProvider({ children }) {
   const [theme, setTheme] = useState('light')
 
+  // Side-effect belongs here
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark', theme === 'dark')
+  }, [theme])
+
   const toggleTheme = () => {
-    setTheme((prev) => {
-      const newTheme = prev === 'light' ? 'dark' : 'light'
-      document.documentElement.classList.toggle('dark', newTheme === 'dark')
-      return newTheme
-    })
+    setTheme(prev => (prev === 'light' ? 'dark' : 'light'))
   }
 
   return (

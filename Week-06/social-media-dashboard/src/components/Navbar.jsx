@@ -5,7 +5,7 @@ import { ThemeContext } from '../contexts/ThemeContext.jsx'
 
 export default function Navbar() {
   const { user, logout } = useAuth()
-  const { theme } = useContext(ThemeContext)
+  const { theme, toggleTheme } = useContext(ThemeContext)
 
   return (
     <nav className="bg-purple-700 p-4 text-white flex justify-between">
@@ -20,7 +20,13 @@ export default function Navbar() {
         ) : (
           <Link to="/login">Login</Link>
         )}
-        <span className="ml-4">Theme: {theme}</span>
+        <button
+          onClick={toggleTheme}
+          className="ml-4 bg-transparent border-0 p-0 text-white cursor-pointer"
+          aria-label="Toggle theme"
+        >
+          Theme: {theme}
+        </button>
       </div>
     </nav>
   )
