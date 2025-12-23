@@ -93,7 +93,7 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 #### Live Preview Links  
 
 1. **Exercise 1 – Social Media Dashboard**  
-   [Live Preview](https://social-media-dashb0ard.netlify.app/)
+   [Live Preview](https://s0cial-mediaa-dashboard.netlify.app/)
    
 ---
 
