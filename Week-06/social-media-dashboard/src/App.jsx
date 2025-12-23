@@ -1,4 +1,4 @@
-import React from 'react' // Add this import
+import React from 'react'
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import store from './store/index.js'
@@ -10,8 +10,7 @@ import Profile from './pages/Profile.jsx'
 import Settings from './pages/Settings.jsx'
 import Login from './pages/Login.jsx'
 
-
-// ProtectedRoute component for authentication
+// Protected Route
 const ProtectedRoute = ({ children }) => {
   const { user } = useAuth()
   return user ? children : <Navigate to="/login" />
@@ -19,13 +18,14 @@ const ProtectedRoute = ({ children }) => {
 
 function App() {
   return (
-    
     <Provider store={store}>
       <ThemeProvider>
         <AuthProvider>
           <Router>
-            <div className="min-h-screen">
+            {/* ✅ ROOT DARK MODE STYLES */}
+            <div className="min-h-screen bg-white dark:bg-gray-900 text-black dark:text-white transition-colors duration-300">
               <Navbar />
+
               <Routes>
                 <Route path="/login" element={<Login />} />
                 <Route path="/feed" element={<ProtectedRoute><Feed /></ProtectedRoute>} />
