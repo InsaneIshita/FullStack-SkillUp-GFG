@@ -97,6 +97,23 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
    
 ---
 
+### Week 7: ANIMATIONS, DEBUGGING & REACT PROJECTS 
+
+| Exercise | Description |
+|----------|-------------|
+| [Exercise 1 - Random Quiz App (React + TypeScript)](./Week-07/Exercise-1) | Built a random quiz application using React and TypeScript, focusing on type safety, state management, and clean component structure. 
+| [Exercise 2 - ClarifAI (AI Chatbot)](./Week-07/Exercise-2) | Developed **ClarifAI**, an AI-powered chatbot using the OpenAI API. Implemented a clean UI, message flow, error handling, and **custom Dark Mode toggle**. |
+
+#### Live Preview Links  
+
+1. **Exercise 1 – Random Quiz App (React-Typescript)**  
+   [Live Preview](https://rand0m-quiz-app.netlify.app/)
+
+2. **Exercise 2 – ClarifAI (AI Chatbot)**  
+   [Live Preview](https://clarifai-chatbot.vercel.app/)
+   
+---
+
 ## 📌 Technologies Used
 
 - HTML5  
@@ -105,7 +122,9 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 - JavaScript
 - React.js
 - Redux
-- Tailwind CSS 
+- Tailwind CSS
+- TypeScript
+- OpenAI API
 
 ---
 
@@ -119,7 +138,8 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 | Week 4 | ✅ Completed |
 | Week 5 | ✅ Completed |
 | Week 6 | ✅ Completed |
-| Week 7 | ⏳ In Progress |
+| Week 7 | ✅ Completed |
+| Week 8 | ⏳ In Progress |
 
 ---
 
