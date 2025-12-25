@@ -179,9 +179,9 @@ body {
 }
 
 .avatar--user {
-  background: #e5e7eb;
-  color: #0b0b0c;
-  padding: 6px;
+  background: #878889;
+  color: rgb(17, 16, 16);
+  padding-left: 1px;
   border-radius: 10px;
 }
 

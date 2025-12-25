@@ -5,7 +5,7 @@ import { SendIcon } from "./Icons.jsx";
 
 export default function Chat() {
   const [messages, setMessages] = useState([
-    { id: crypto.randomUUID(), role: "ClarifAI", content: "Hi! I’m ClarifAI. What would you like to know today? 🧠💬" },
+    { id: crypto.randomUUID(), role: "assistant", content: "Hi! I’m ClarifAI. What would you like to know today? 🧠💬" },
   ]);
   const [input, setInput] = useState("");
   const [model, setModel] = useState("gpt-4.1-mini");
@@ -22,7 +22,7 @@ export default function Chat() {
   async function handleSend() {
     if (!canSend) return;
     setError("");
-    const userMsg = { id: crypto.randomUUID(), role: "You", content: input.trim() };
+    const userMsg = { id: crypto.randomUUID(), role: "user", content: input.trim() };
     setMessages(m => [...m, userMsg]);
     setInput("");
     setLoading(true);
