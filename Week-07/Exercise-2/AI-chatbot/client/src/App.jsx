@@ -7,7 +7,7 @@ function Header() {
 
   return (
     <header className="app__header">
-      <div className="logo"><img src="src\assets\icons8-chatbot-32.png" alt="AI Chatbot Logo" /></div>
+      <div className="logo"><img src="..\src\assets\icons8-chatbot-32.png" alt="AI Chatbot Logo" /></div>
       <div className="titles">
         <h1>ClarifAI</h1>
         <p>Where curiosity meets clarity.</p>
