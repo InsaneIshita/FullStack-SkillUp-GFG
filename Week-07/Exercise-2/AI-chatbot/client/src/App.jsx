@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import Chat from "./components/Chat.jsx";
 import ThemeProvider, { ThemeContext } from './contexts/ThemeContext.jsx'
-import chatbotIcon from "../src/assets/icons8-chatbot-32.png";
+import chatbotIcon from "./assets/icons8-chatbot-32.png";
 
 function Header() {
   const { theme, toggleTheme } = useContext(ThemeContext);
