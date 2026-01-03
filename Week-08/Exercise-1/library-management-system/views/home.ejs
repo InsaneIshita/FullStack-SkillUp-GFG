@@ -1,0 +1,213 @@
+<html>
+<head>
+    <style>
+    body {
+        font-family: "Segoe UI", Tahoma, sans-serif;
+        color: black;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+
+        /* Library background image */
+        background-image: url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    /* Dark overlay for readability */
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.45);
+        z-index: -1;
+    }
+
+    h1 {
+        text-align: center;
+        color: #cab200;
+        margin: 30px 0;
+        letter-spacing: 1px;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto 40px auto;
+        padding: 25px;
+
+        /* Glassmorphism */
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+    }
+
+    h2 {
+        color: #000000;
+        margin: 5px 0 20px 0;
+    }
+
+    table {
+        width: 100%;
+        border-color: #000000;
+        border-collapse: separate;
+        color: #000000;
+    }
+
+    th, td {
+        padding: 12px;
+        text-align: left;
+    }
+
+    th {
+        background: rgba(255, 255, 255, 0.25);
+        text-transform: uppercase;
+        font-size: 13px;
+    }
+
+    tr {
+        background: rgba(255, 255, 255, 0.12);
+    }
+
+    tr:nth-child(even) {
+        background: rgba(255, 255, 255, 0.08);
+    }
+
+    tr:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    form {
+        margin: 0;
+    }
+
+    button {
+        padding: 7px 14px;
+        border: none;
+        border-radius: 6px;
+        font-size: 13px;
+        cursor: pointer;
+        color: #ffffff;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    button:hover {
+        transform: scale(1.05);
+        opacity: 0.9;
+    }
+
+    form[action="/issue"] button {
+        background-color: #27ae60;
+    }
+
+    form[action="/return"] button {
+        background-color: #2980b9;
+    }
+
+    form[action="/delete"] button {
+        background-color: #e74c3c;
+    }
+
+    /* Add Book Form */
+    .add-book-form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        color: #000000;
+    }
+
+    .add-book-form input {
+        color: #000000;
+        flex: 1;
+        min-width: 180px;
+        padding: 12px;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        font-size: 14px;
+    }
+
+    .add-book-form button {
+        background-color: #e3c905;
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+        table {
+            font-size: 12px;
+        }
+    }
+</style>
+
+</head>
+<body>
+    <h1><strong>Library Management System</strong></h1>
+    <!-- Display Books -->
+     <div class="container">
+    <h2>All Books</h2>
+    <table>
+        <tr>
+            <th>Book Name</th>
+            <th>Book Author</th>
+            <th>Book Pages</th>
+            <th>Book Price</th>
+            <th>Book Availability</th>
+            <th>Issue</th>
+            <th>Return</th>
+            <th>Delete</th>
+        </tr>
+        <% data.forEach(element => { %>
+            <tr>
+                <td><%= element.bookName %></td>
+                <td><%= element.bookAuthor %></td>
+                <td><%= element.bookPages %></td>
+                <td><%= element.bookPrice %></td>
+                <td><%= element.bookState %></td>
+                <td>
+                    <% if (element.bookState === "Available") { %>
+                        <form action="/issue" method="post">
+                            <input type="hidden" name="bookName" value="<%= element.bookName %>">
+                            <button type="submit">Issue</button>
+                        </form>
+                    <% } %>
+                </td>
+                <td>
+                    <% if (element.bookState === "Issued") { %>
+                        <form action="/return" method="post">
+                            <input type="hidden" name="bookName" value="<%= element.bookName %>">
+                            <button type="submit">Return</button>
+                        </form>
+                    <% } %>
+                </td>
+                <td>
+                    <form action="/delete" method="post">
+                        <input type="hidden" name="bookName" value="<%= element.bookName %>">
+                        <button type="submit">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        <% }) %>
+    </table>
+    </div>
+    <!-- Add Book Form -->
+
+    <div class="container">
+    <h2>Add Book</h2>
+    <form class="add-book-form" action="/" method="post">
+        <input type="text" placeholder="Book Name" name="bookName" required>
+        <input type="text" placeholder="Book Author" name="bookAuthor" required>
+        <input type="number" placeholder="Book Pages" name="bookPages" required>
+        <input type="number" placeholder="Book Price" name="bookPrice" required>
+        <button type="submit">Add</button>
+    </form>
+    </div>
+</body>
+</html>
