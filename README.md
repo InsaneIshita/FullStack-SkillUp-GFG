@@ -2,7 +2,7 @@
 
 This repository documents my learning journey through the **GeeksforGeeks Nation SkillUp Program 2025 – Full Stack Web Development Path**.
 
-🗓️ Duration: 16 Weeks  
+🗓️ Duration: 13 Weeks  
 🎯 Goal: Become proficient in full stack development by completing weekly assignments and projects.
 
 ---
@@ -114,6 +114,19 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
    
 ---
 
+### Week 8: UNDERSTANDING NODE.JS
+
+| Exercise | Description |
+|----------|-------------|
+| [Exercise 1 - Library Management System (Node.js)](./Week-08/Exercise-1/library-management-system) | Developed a **Library Management System** using **Node.js, Express, and EJS**. The system supports adding books, issuing and returning books, and deleting records with a clean glassmorphism UI. |
+
+#### Live Preview Link  
+
+1. **Exercise 1 – Library Management System (Node.js)**  
+   [Live Preview](https://library-management-system-ueha.onrender.com/)
+
+---
+
 ## 📌 Technologies Used
 
 - HTML5  
@@ -125,7 +138,10 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 - Tailwind CSS
 - TypeScript
 - OpenAI API
-
+- Node.js
+- Express.js
+- EJS
+  
 ---
 
 ## 📈 Progress Tracker
@@ -139,7 +155,8 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 | Week 5 | ✅ Completed |
 | Week 6 | ✅ Completed |
 | Week 7 | ✅ Completed |
-| Week 8 | ⏳ In Progress |
+| Week 8 | ✅ Completed |
+| Week 9 | ⏳ In Progress |
 
 ---
 
