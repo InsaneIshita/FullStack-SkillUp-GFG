@@ -1,0 +1,199 @@
+<html>
+<head>
+    <title>User Management System</title>
+    <style>
+    body {
+        font-family: "Segoe UI", Tahoma, sans-serif;
+        color: black;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+
+        /* Library background image */
+        background-image: url("https://4kwallpapers.com/images/wallpapers/stranger-things-2560x1080-18568.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    /* Dark overlay for readability */
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.45);
+        z-index: -1;
+    }
+
+    h1 {
+        
+        text-align: center;
+        color: #d40d0d;
+        -webkit-text-stroke: 2px black;
+        margin: 30px 0;
+        letter-spacing: 1px;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto 40px auto;
+        padding: 25px;
+
+        /* Glassmorphism */
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+    }
+
+    h2 {
+        color: #000000;
+        margin: 5px 0 20px 0;
+    }
+
+    table {
+        width: 100%;
+        
+        border-collapse: separate;
+        color: #000000;
+    }
+
+    th, td {
+        padding: 12px;
+        text-align: left;
+    }
+
+    th {
+        background: rgba(255, 255, 255, 0.25);
+        text-transform: uppercase;
+        font-size: 13px;
+    }
+
+    tr {
+        background: rgba(255, 255, 255, 0.12);
+    }
+
+    tr:nth-child(even) {
+        background: rgba(255, 255, 255, 0.08);
+    }
+
+    tr:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    form {
+        margin: 0;
+    }
+
+    button {
+        padding: 7px 14px;
+        border: none;
+        border-radius: 6px;
+        font-size: 13px;
+        cursor: pointer;
+        color: #ffffff;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    button:hover {
+        transform: scale(1.05);
+        opacity: 0.9;
+    }
+
+    form[action="/delete"] button {
+        background-color: #e74c3c;
+    }
+
+    /* Add Book Form */
+    .add-book-form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        color: #000000;
+    }
+
+    .add-book-form input {
+        color: #000000;
+        flex: 1;
+        min-width: 180px;
+        padding: 12px;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        font-size: 14px;
+    }
+
+    .add-book-form button {
+        background-color: #2980b9;
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+        table {
+            font-size: 12px;
+        }
+    }
+</style>
+</head>
+
+<body>
+    <h1><strong>USER MANAGEMENT SYSTEM</strong></h1>
+    <!-- Display Users -->
+    <div class="container">
+    <h2>Current Users</h2>
+    <table border="1">
+        <tr>
+            <th>User Id</th>
+            <th>User Name</th>
+            <th>User Email</th>
+            <th>Age</th>
+            <th>Delete</th>
+        </tr>
+        <% data.forEach(user => { %>
+        <tr>
+            <td><%= user.userUniqueId %></td>
+            <td><%= user.userName %></td>
+            <td><%= user.userEmail %></td>
+            <td><%= user.userAge %></td>
+            <td>
+                <form action="/delete" method="post">
+                    <input type="hidden" name="userUniqueId" value="<%= user.userUniqueId %>">
+                    <button type="submit">Delete</button>
+                </form>
+            </td>
+        </tr>
+        <% }) %>
+    </table>
+    </div>
+
+     <!-- Add User Form -->
+     <div class="container">
+     <h2>Add User</h2>
+     <form class="add-book-form" action="/" method="post">
+         <input type="text" placeholder="User Unique Id" name="userUniqueId" required>
+         <input type="text" placeholder="User Name" name="userName" required>
+         <input type="text" placeholder="User Email" name="userEmail" required>
+         <input type="text" placeholder="User Age" name="userAge" required>
+         <button type="submit">Submit</button>
+     </form>
+    </div>
+    <!-- Update User Form -->
+    <div class="container">
+    <h2>Update User</h2>
+    <form class="add-book-form" action="/update" method="post">
+        <input type="text" placeholder="User Unique Id" name="userUniqueId" required>
+        <input type="text" placeholder="User Name" name="userName">
+        <input type="text" placeholder="User Email" name="userEmail">
+        <input type="text" placeholder="User Age" name="userAge">
+        <button type="submit">Update</button>
+    </form>
+    </div>
+</body>
+</html>
