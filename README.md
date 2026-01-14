@@ -2,7 +2,7 @@
 
 This repository documents my learning journey through the **GeeksforGeeks Nation SkillUp Program 2025 – Full Stack Web Development Path**.
 
-🗓️ Duration: 16 Weeks  
+🗓️ Duration: 13 Weeks  
 🎯 Goal: Become proficient in full stack development by completing weekly assignments and projects.
 
 ---
