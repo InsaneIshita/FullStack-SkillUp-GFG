@@ -127,6 +127,17 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 
 ---
 
+### Week 9: LEARN NODE.JS (PART 2)
+
+| Exercise | Description |
+|----------|-------------|
+| [Exercise - User Management System (Node.js)](./Week-09/Exercise-1) | Built a **User Management System** using **Node.js** to understand backend fundamentals and CRUD operations. The system allows administrators to add user details via a text input, and perform **Create, Read, Update, and Delete (CRUD)** operations.|
+
+#### Live Preview Link  
+
+1. **Exercise – User Management System (Node.js)**  
+   [Live Preview](https://user-management-system-oeui.onrender.com/)
+
 ## 📌 Technologies Used
 
 - HTML5  
@@ -156,7 +167,8 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 | Week 6 | ✅ Completed |
 | Week 7 | ✅ Completed |
 | Week 8 | ✅ Completed |
-| Week 9 | ⏳ In Progress |
+| Week 9 | ✅ Completed |
+| Week 10 | ⏳ In Progress |
 
 ---
 
