@@ -19,8 +19,13 @@ app.get("/", (req, res) => {
 });
 
 app.get("/room/:roomId", (req, res) => {
-    res.render("index", { roomId: req.params.roomId });
+    const username = req.query.name || "Guest";
+    res.render("index", {
+        roomId: req.params.roomId,
+        username
+    });
 });
+
 
 app.get("/end", (req, res) => {
     res.render("end");
@@ -28,15 +33,16 @@ app.get("/end", (req, res) => {
 
 
 io.on("connection", socket => {
-    socket.on("join-room", (roomId, userId) => {
+    socket.on("join-room", (roomId, userId, username) => {
         socket.join(roomId);
-        socket.to(roomId).emit("user-connected", userId);
+        socket.to(roomId).emit("user-connected", userId, username);
 
         socket.on("disconnect", () => {
             socket.to(roomId).emit("user-disconnected", userId);
         });
     });
 });
+
 
 server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
