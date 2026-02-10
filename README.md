@@ -79,10 +79,10 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 #### Live Preview Links  
 
 1. **Exercise 1 – Simple Counter App**  
-   [Live Preview](https://counter-reactt-app.netlify.app/)
+   [Deployed App](https://counter-reactt-app.netlify.app/)
 
 2. **Exercise 2 – To Do List App (React-Bootstrap)**  
-   [Live Preview](https://todo-list-reactt-app.netlify.app/)
+   [Deployed App](https://todo-list-reactt-app.netlify.app/)
 
 ### Week 6: REACT HOOKS
 
@@ -93,7 +93,7 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 #### Live Preview Links  
 
 1. **Exercise 1 – Social Media Dashboard**  
-   [Live Preview](https://s0cial-mediaa-dashboard.netlify.app/)
+   [Deployed App](https://s0cial-mediaa-dashboard.netlify.app/)
    
 ---
 
@@ -107,10 +107,10 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 #### Live Preview Links  
 
 1. **Exercise 1 – Random Quiz App (React-Typescript)**  
-   [Live Preview](https://rand0m-quiz-app.netlify.app/)
+   [Deployed App](https://rand0m-quiz-app.netlify.app/)
 
 2. **Exercise 2 – ClarifAI (AI Chatbot)**  
-   [Live Preview](https://clarifai-chatbot.vercel.app/)
+   [Deployed App](https://clarifai-chatbot.vercel.app/)
    
 ---
 
@@ -123,7 +123,7 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 #### Live Preview Link  
 
 1. **Exercise 1 – Library Management System (Node.js)**  
-   [Live Preview](https://library-management-system-ueha.onrender.com/)
+   [Deployed App](https://library-management-system-ueha.onrender.com/)
 
 ---
 
@@ -136,7 +136,23 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 #### Live Preview Link  
 
 1. **Exercise – User Management System (Node.js)**  
-   [Live Preview](https://user-management-system-oeui.onrender.com/)
+   [Deployed App](https://user-management-system-oeui.onrender.com/)
+
+---
+
+### Week 10 & 11: EXPRESS.JS (PART 1 & 2)
+
+| Assignment | Description |
+|-----------|-------------|
+| [Assignment – Real-Time Video Call App (Vmeet)](./Week-11/VideoCallApp) | Built a **real-time video calling application** using **Node.js, Express, Socket.IO, PeerJS, and WebRTC**. Implemented room-based video calls, user joining/leaving events, live user count, audio/video controls, and deployment on Render. |
+
+#### Live Preview Link
+
+🔗 **Vmeet – Real-Time Video Call App**  
+[Deployed App](https://fullstack-skillup-gfg.onrender.com)
+
+---
+
 
 ## 📌 Technologies Used
 
@@ -152,6 +168,9 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 - Node.js
 - Express.js
 - EJS
+- Socket.IO  
+- WebRTC  
+- PeerJS  
   
 ---
 
@@ -168,7 +187,9 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 | Week 7 | ✅ Completed |
 | Week 8 | ✅ Completed |
 | Week 9 | ✅ Completed |
-| Week 10 | ⏳ In Progress |
+| Week 10 | ✅ Completed |
+| Week 11 | ✅ Completed |
+| Week 12 | ⏳ In Progress |
 
 ---
 
