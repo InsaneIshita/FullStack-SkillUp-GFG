@@ -1,8 +1,15 @@
 const express = require("express");
 const app = express();
 const server = require("http").Server(app);
-const io = require("socket.io")(server);
+const io = require("socket.io")(server, {
+  cors: {
+    origin: "*",
+    methods: ["GET", "POST"]
+  }
+});
+
 const { v4: uuidV4 } = require("uuid");
+const PORT = process.env.PORT || 4000;
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
@@ -31,6 +38,6 @@ io.on("connection", socket => {
     });
 });
 
-server.listen(4000, () => {
-    console.log("Server running on port 4000");
+server.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
