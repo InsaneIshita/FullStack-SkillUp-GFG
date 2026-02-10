@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vmeet - Call Ended</title>
+    <style>
+        body {
+            background: black;
+            color: white;
+            font-family: Arial;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box {
+            text-align: center;
+            background: #111;
+            padding: 30px;
+            border-radius: 12px;
+            width: 320px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            border-radius: 20px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .rejoin {
+            background: #93b2ff;
+            color: #0048ff;
+        }
+
+        .rejoin:hover {
+            background: #719aff;
+            color: blue;
+        }
+
+        .new {
+            background: #ff6b6b;
+            color: white;
+        }
+        .new:hover {
+            background: #ff4c4c;
+                color: white;
+        }
+    </style>
+</head>
+
+<body>
+<div class="box">
+    <h2>Call Ended</h2>
+    <p>You have left the meeting.</p>
+
+    <button class="rejoin" onclick="rejoin()">Rejoin Call</button>
+    <button class="new" onclick="newCall()">Create New Room</button>
+</div>
+
+<script>
+    const lastRoom = sessionStorage.getItem("lastRoom");
+
+    function rejoin() {
+        if (lastRoom) {
+            window.location.href = `/room/${lastRoom}`;
+        }
+    }
+
+    function newCall() {
+        window.location.href = "/";
+    }
+</script>
+</body>
+</html>

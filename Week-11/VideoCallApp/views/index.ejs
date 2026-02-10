@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vmeet - Video Call</title>
+
+  
+    <style>
+        body {
+            margin: 0;
+            background: black;
+            color: white;
+            font-family: Arial;
+        }
+
+        #videoContainer {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+
+        #videoDiv {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 15px;
+        }
+
+        .video-box {
+            position: relative;
+        }
+
+        .video-box span {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 4px 8px;
+            border-radius: 10px;
+            font-size: 12px;
+        }
+
+        video {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        #controls {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+            background: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        #controls button {
+            padding: 10px 18px;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #roomIdLabel {
+            position: absolute;
+
+            left: 12px;
+            bottom: 18px;
+            background: rgba(255, 255, 255, 0.12);
+            color: #ddd;
+            padding: 6px 12px;
+            border-radius: 14px;
+            font-size: 11px;
+            font-family: monospace;
+            user-select: text;
+        }
+
+        #roomIdLabel {
+            cursor: pointer;
+        }
+
+        #roomIdLabel.copied {
+            background: rgba(0, 255, 0, 0.25);
+            color: #b6ffb6;
+        }
+
+
+        #muteBtn,
+        #videoBtn {
+            color: rgb(255, 38, 0);
+            background-color: rgb(255, 167, 151);
+        }
+
+        #end {
+            color: white;
+            background-color: red;
+        }
+
+        #userCount {
+            background-color: rgb(147, 178, 255);
+            color: rgb(0, 72, 255);
+            padding: 10px 18px;
+            border-radius: 20px;
+            border: none;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .video-off video {
+            visibility: hidden;
+        }
+
+        .video-off::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: #3a3a3a;
+            border-radius: 10px;
+        }
+
+        .video-off span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            font-size: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 30px;
+        }
+    </style>
+
+    <script>
+        const ROOM_ID = "<%= roomId %>";
+    </script>
+
+    <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        sessionStorage.setItem("lastRoom", "<%= roomId %>");
+    </script>
+
+    <script defer src="/index.js"></script>
+</head>
+
+<body>
+
+    <div id="videoContainer">
+        <div id="videoDiv"></div>
+    </div>
+
+
+    <div id="controls">
+        <span id="roomIdLabel" title="Click to copy">
+            Room: <span id="roomIdText">
+                <%= roomId %>
+            </span>
+        </span>
+
+
+        <button id="userCount">Users: 1</button>
+        <button id="muteBtn" type="button" onclick="toggleMute()">Mute</button>
+        <button id="videoBtn" type="button" onclick="toggleVideo()">Video Off</button>
+        <button id="end" type="button" onclick="endCall()">End Call</button>
+
+
+    </div>
+
+</body>
+
+</html>
