@@ -46,17 +46,29 @@ peer.on('open', id => {
 });
 
 function connectToNewUser(userId, stream) {
+    if (peers[userId]) return;
+
     const call = peer.call(userId, stream, {
         metadata: { username: USERNAME }
     });
 
     call.on('stream', userStream => {
-        // Name will be handled on receiver side
         addVideo(userStream, "Guest", userId);
+    });
+
+    call.on('close', () => {
+        if (peers[userId]) {
+            peers[userId].remove();
+            delete peers[userId];
+            updateUserCount();
+        }
     });
 }
 
+
 function addVideo(stream, label, peerId) {
+    if (peerId && peers[peerId]) return;
+
     const box = document.createElement('div');
     box.classList.add('video-box');
 
@@ -76,12 +88,12 @@ function addVideo(stream, label, peerId) {
     box.append(video);
     videoGrid.append(box);
 
-    
     if (label === USERNAME || label === "You") {
         box.id = "myVideoBox";
     }
 
     if (peerId) peers[peerId] = box;
+
     updateUserCount();
 }
 
