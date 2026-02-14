@@ -13,7 +13,6 @@ const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 // Health check
 app.get("/api/health", (req, res) => res.json({ ok: true }));
 
-// POST /api/chat { model, messages: [{role, content}, ...] }
 app.post("/api/chat", async (req, res) => {
   try {
     const { model = "gpt-4.1-mini", messages = [] } = req.body || {};
@@ -24,12 +23,26 @@ app.post("/api/chat", async (req, res) => {
     });
 
     const text = response.output_text ?? "(no output_text)";
-    res.json({ text });
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ error: err?.message || "Unknown error" });
+    return res.json({ text });
+
+  } catch (error) {
+    console.error("OpenAI Error:", error);
+
+    // Detect quota exceeded (429)
+    if (error.status === 429 || error.response?.status === 429) {
+      return res.json({
+        text: "⚠️ AI service temporarily unavailable. Showing demo response.\n\nThis is a simulated AI response for demonstration purposes.",
+        demo: true
+      });
+    }
+
+    // Other errors
+    return res.status(500).json({
+      error: "Something went wrong. Please try again later."
+    });
   }
 });
+
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => console.log(`✅ API ready on http://localhost:${PORT}`));
