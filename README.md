@@ -24,6 +24,8 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 2. **Assignment 2 – Landing Page**  
    [Live Preview](https://htmlpreview.github.io/?https://github.com/InsaneIshita/FullStack-SkillUp-GFG/blob/main/Week-01/Assignment-2/landing_page.html)
 
+---
+
 ### Week 2: LEARN CSS
 
 | Assignment | Description |
@@ -39,6 +41,8 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 2. **Assignment 2 – E-commerce Website**  
    [Live Preview](https://htmlpreview.github.io/?https://github.com/InsaneIshita/FullStack-SkillUp-GFG/blob/main/Week-02/Assignment-2/index.html)
 
+---
+
 ### Week 3: LEARN JAVASCRIPT (PART 1)
 
 | Exercise | Description |
@@ -49,6 +53,8 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 
 1. **Exercise – Dark Mode Toggle**  
    [Live Preview](https://htmlpreview.github.io/?https://github.com/InsaneIshita/FullStack-SkillUp-GFG/blob/main/Week-03/Exercise/darkModeToggle.html)
+
+---
 
 ### Week 4: LEARN JAVASCRIPT (PART 2)
 
@@ -69,6 +75,8 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 3. **Exercise 3 – Dynamic Portfolio Website**  
    [Live Preview](https://htmlpreview.github.io/?https://github.com/InsaneIshita/FullStack-SkillUp-GFG/blob/main/Week-04/Exercise-3/portfolio.html)
 
+---
+
 ### Week 5: LEARN REACT
 
 | Exercise | Description |
@@ -83,6 +91,8 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 
 2. **Exercise 2 – To Do List App (React-Bootstrap)**  
    [Deployed App](https://todo-list-reactt-app.netlify.app/)
+
+---
 
 ### Week 6: REACT HOOKS
 
@@ -148,8 +158,8 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 
 #### Live Preview Link
 
-🔗 **Vmeet – Real-Time Video Call App**  
-[Deployed App](https://fullstack-skillup-gfg.onrender.com)
+1. **Vmeet – Real-Time Video Call App**  
+   [Deployed App](https://fullstack-skillup-gfg.onrender.com)
 
 ---
 
