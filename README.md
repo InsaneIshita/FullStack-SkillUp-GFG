@@ -153,6 +153,19 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 
 ---
 
+### Week 12 & 13: MONGODB (PART 1 & 2)
+
+| Exercise | Description |
+|----------|-------------|
+| [Exercise - To-Do List with MongoDB](./Week-13/ToDoListApp) | Built a full-stack To-Do List application integrated with **MongoDB** using **Mongoose** for schema modeling. Learned how to connect a database, define schemas, and perform CRUD operations with persistent storage. |
+
+#### Live Preview Link  
+
+1. **Exercise – To-Do List with MongoDB**  
+   [Demo](https://drive.google.com/file/d/1wHkxvEQWPDrXl_dx3czTYhvwF3JP4jB0/view?usp=sharing)
+
+---
+
 
 ## 📌 Technologies Used
 
@@ -170,7 +183,10 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 - EJS
 - Socket.IO  
 - WebRTC  
-- PeerJS  
+- PeerJS
+- Mongodb Compass
+- Mongodb Atlas
+- Mongoose  
   
 ---
 
@@ -189,7 +205,8 @@ This repository documents my learning journey through the **GeeksforGeeks Nation
 | Week 9 | ✅ Completed |
 | Week 10 | ✅ Completed |
 | Week 11 | ✅ Completed |
-| Week 12 | ⏳ In Progress |
+| Week 12 | ✅ Completed |
+| Week 13 | ✅ Completed |
 
 ---
 
